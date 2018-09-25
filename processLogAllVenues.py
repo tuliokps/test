@@ -118,7 +118,9 @@ for path,dirs,files in os.walk(dirpath):
 			    tecnologia=aux2[2]
 				frequencia=aux2[1]
 			
-			
+			data_file = open(filename, 'r')
+			linhas_do_arquivo=data_file.readlines()
+						
 			ler_arquivo_log(linhas_do_arquivo, operadora,tipo_teste,tecnologia,frequencia,andar,venue)
         	print(aux)
 
